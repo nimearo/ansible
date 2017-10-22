@@ -1,5 +1,5 @@
 [iota-nodes]
-node2 ansible_connection=ssh ansible_host=ec2-18-194-149-89.eu-central-1.compute.amazonaws.com 
+node2 ansible_connection=ssh ansible_host=18.194.149.89 ansible_user=ec2-user
 
 [iota-nodes:vars]
 api_port=14265

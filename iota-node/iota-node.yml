@@ -2,14 +2,18 @@
 - hosts: iota-nodes
   tasks:
   - name: Install Java JDK
+    become: true
     package:
-      name: openjdk-9-jdk
+      name: java-1.8.0-openjdk
+      #name: openjdk-9-jdk
       state: latest
   - name: Install GIT
+    become: true
     package:
       name: git
       state: latest
   - name: Install Maven
+    become: true
     package:
       name: maven
       state: latest
