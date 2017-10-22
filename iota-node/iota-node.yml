@@ -1,0 +1,15 @@
+---
+- hosts: iota-nodes
+  tasks:
+  - name: Install Java JDK
+    package:
+      name: openjdk-9-jdk
+      state: latest
+  - name: Install GIT
+    package:
+      name: git
+      state: latest
+  - name: Install Maven
+    package:
+      name: maven
+      state: latest
